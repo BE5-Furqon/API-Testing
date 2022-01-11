@@ -39,10 +39,10 @@ func initConfig() *AppConfig {
 	defaultConfig.Port = "1323"
 	defaultConfig.Database.Driver = "mysql"
 	defaultConfig.Database.Name = "crud_go"
-	defaultConfig.Database.Host = "localhost"
+	defaultConfig.Database.Host = "db-be5.cdvldrjpkztm.ap-southeast-1.rds.amazonaws.com"
 	defaultConfig.Database.Port = "3306"
 	defaultConfig.Database.Username = "root"
-	defaultConfig.Database.Password = ""
+	defaultConfig.Database.Password = "root1234"
 
 	viper.SetConfigFile("yaml")
 	viper.SetConfigName("config")
