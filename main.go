@@ -15,6 +15,7 @@ func main()  {
 	config := config.GetConfig()
 
 	db := util.InitDB(config)
+	util.InitialMigrate(db)
 
 	userRepo := repository.NewUserRepo(db)
 	userController := controllers.NewUserController(userRepo)
