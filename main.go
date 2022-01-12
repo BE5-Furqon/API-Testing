@@ -28,5 +28,7 @@ func main()  {
 	routes.RegisterUserPath(e, userController)
 	routes.RegisterBookPath(e, bookController)
 
+	//test push
+
 	e.Logger.Fatal(e.Start(fmt.Sprintf(":%s", config.Port)))
 }
